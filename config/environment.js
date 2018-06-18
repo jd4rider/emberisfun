@@ -6,6 +6,23 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: 'AIzaSyAxKkL4zQPF3teUZhAmYNDs6ShXCUpgwnQ',
+      authDomain: 'net-price-calculator-ca3c6.firebaseapp.com',
+      databaseURL: 'https://net-price-calculator-ca3c6.firebaseio.com',
+      projectId: 'net-price-calculator-ca3c6',
+      storageBucket: 'net-price-calculator-ca3c6.appspot.com',
+      messagingSenderId: '928197174530'
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
